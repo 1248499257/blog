@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hexo已经看腻了，来试试VuePress搭建个人博客 | Haha的个人Blog</title>
+    <meta name="description" content="如果你工作很忙，除了你是真的很重要之外，更可能的原因是：你很弱。">
+    <link rel="icon" href="/favicon.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.4c3b1344.css" as="style"><link rel="preload" href="/assets/js/app.510fc359.js" as="script"><link rel="preload" href="/assets/js/2.7d99f056.js" as="script"><link rel="preload" href="/assets/js/18.2efdb6f8.js" as="script"><link rel="prefetch" href="/assets/js/10.896e73a8.js"><link rel="prefetch" href="/assets/js/11.129c8d6c.js"><link rel="prefetch" href="/assets/js/12.7c8c4e6d.js"><link rel="prefetch" href="/assets/js/13.f74be3f6.js"><link rel="prefetch" href="/assets/js/14.e467f221.js"><link rel="prefetch" href="/assets/js/15.5e06996a.js"><link rel="prefetch" href="/assets/js/16.5c9e7dfd.js"><link rel="prefetch" href="/assets/js/17.4f4f3a63.js"><link rel="prefetch" href="/assets/js/19.6ecdc342.js"><link rel="prefetch" href="/assets/js/20.3e3efa73.js"><link rel="prefetch" href="/assets/js/21.59ed5385.js"><link rel="prefetch" href="/assets/js/22.af610e03.js"><link rel="prefetch" href="/assets/js/23.7c6728ee.js"><link rel="prefetch" href="/assets/js/24.135582e7.js"><link rel="prefetch" href="/assets/js/25.36939866.js"><link rel="prefetch" href="/assets/js/26.b155e29f.js"><link rel="prefetch" href="/assets/js/3.0bd0194e.js"><link rel="prefetch" href="/assets/js/4.7177fe92.js"><link rel="prefetch" href="/assets/js/5.68ee920c.js"><link rel="prefetch" href="/assets/js/6.c2d7d4e2.js"><link rel="prefetch" href="/assets/js/7.acf77970.js"><link rel="prefetch" href="/assets/js/8.7ee0b667.js"><link rel="prefetch" href="/assets/js/9.186c862b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4c3b1344.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Haha的个人Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人文章" class="dropdown-title"><span class="title">个人文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/HTTP/" class="nav-link">HTTP</a></li><li class="dropdown-item"><!----> <a href="/Library/" class="nav-link router-link-exact-active router-link-active">node</a></li><li class="dropdown-item"><!----> <a href="/Wheel/" class="nav-link">小程序</a></li></ul></div></div><div class="nav-item"><a href="/Project/" class="nav-link">最近阅读的书籍</a></div><div class="nav-item"><a href="/Resume/" class="nav-link">个人简介</a></div><div class="nav-item"><a href="https://github.com/hubingliang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  BitBuket
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人文章" class="dropdown-title"><span class="title">个人文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/HTTP/" class="nav-link">HTTP</a></li><li class="dropdown-item"><!----> <a href="/Library/" class="nav-link router-link-exact-active router-link-active">node</a></li><li class="dropdown-item"><!----> <a href="/Wheel/" class="nav-link">小程序</a></li></ul></div></div><div class="nav-item"><a href="/Project/" class="nav-link">最近阅读的书籍</a></div><div class="nav-item"><a href="/Resume/" class="nav-link">个人简介</a></div><div class="nav-item"><a href="https://github.com/hubingliang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  BitBuket
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Library/" class="active sidebar-link">Hexo已经看腻了，来试试VuePress搭建个人博客</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Library/#vuepress" class="sidebar-link">VuePress</a></li><li class="sidebar-sub-header"><a href="/Library/#上手搭建" class="sidebar-link">上手搭建</a></li><li class="sidebar-sub-header"><a href="/Library/#首页配置" class="sidebar-link">首页配置</a></li><li class="sidebar-sub-header"><a href="/Library/#导航配置" class="sidebar-link">导航配置</a></li><li class="sidebar-sub-header"><a href="/Library/#更改默认主题色" class="sidebar-link">更改默认主题色</a></li><li class="sidebar-sub-header"><a href="/Library/#侧边栏的实现" class="sidebar-link">侧边栏的实现</a></li><li class="sidebar-sub-header"><a href="/Library/#部署" class="sidebar-link">部署</a></li></ul></li><li><a href="/Library/emoji.html" class="sidebar-link">如何在你的项目中引入emoji😀</a></li><li><a href="/Library/vscode-theme.html" class="sidebar-link">如何打造一款自己的 VSCode 主题？</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hexo已经看腻了，来试试vuepress搭建个人博客"><a href="#hexo已经看腻了，来试试vuepress搭建个人博客" class="header-anchor">#</a> Hexo已经看腻了，来试试VuePress搭建个人博客</h1> <p><img src="https://user-gold-cdn.xitu.io/2018/4/23/162f21a0e09d9fd3?w=600&amp;h=600&amp;f=png&amp;s=160672" alt=""></p> <h2 id="vuepress"><a href="#vuepress" class="header-anchor">#</a> VuePress</h2> <p>先简单介绍一下VuePress，这是尤大在2018年4月份发布的一个新轮子。</p> <p><img src="https://user-gold-cdn.xitu.io/2018/4/23/162f21add3603e86?w=751&amp;h=418&amp;f=png&amp;s=63447" alt=""></p> <p>一个基于 Vue SSR 的静态站生成器，本来的目的是爽爽的写文档，但是我发现用来撸一个人博客也非常不错。</p> <p><strong><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer">这是VuePress的官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></strong> <strong><a href="https://vuepress.docschina.org/" target="_blank" rel="noopener noreferrer">这是VuePress的中文文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></strong></p> <h2 id="上手搭建"><a href="#上手搭建" class="header-anchor">#</a> 上手搭建</h2> <p>你可以跟着文档上的例子自己玩一玩，不过由于VuePress的文档也是用VuePress来实现的，所以我取巧直接拿<a href="https://github.com/vuejs/vuepress" target="_blank" rel="noopener noreferrer">VuePress仓库<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>中的<strong>docs</strong>目录拿来玩耍。</p> <ol><li>首先安装VuePress到全局</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -g vuepress
+</code></pre></div><ol start="2"><li>然后把VuePress仓库克隆到你的电脑</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> clone git@github.com:docschina/vuepress.git
+</code></pre></div><ol start="3"><li>在docs文件中执行（请确保你的 Node.js 版本 &gt;= 8）</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> vuepress
+<span class="token builtin class-name">cd</span> docs
+vuepress dev
+</code></pre></div><p>当你看到这一行就说明已经成功了：</p> <div class="language- extra-class"><pre class="language-text"><code> VuePress dev server listening at http://localhost:8080/
+</code></pre></div><p>下面我们打开<a href="http://localhost:8080/" target="_blank" rel="noopener noreferrer">http://localhost:8080/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+发现真的打开了vuepress文档：
+<img src="https://user-gold-cdn.xitu.io/2018/4/23/162f21a0e0944215?w=1240&amp;h=520&amp;f=png&amp;s=69295" alt=""></p> <p>下面的工作就是数据的替换了，但我们应该先看一下docs的目录结构：</p> <div class="language- extra-class"><pre class="language-text"><code>├─.vuepress
+│  ├─components
+│  └─public
+│      └─icons
+│   └─config.js // 配置文件
+├─config // Vuepress文档的配置参考内容
+├─default-theme-config // Vuepress文档的默认主题配置内容
+├─guide // Vuepress文档的指南内容
+└─zh // 中文文档目录
+    ├─config
+    ├─default-theme-config
+    └─guide
+└─README.md // 首页配置文件
+</code></pre></div><p>文档分成了两部分，中文文档在/zh/目录下，英文文档在根目录下。</p> <p>其实目录里面的东西都挺好看懂的，首先guide 、default-theme-config、config 这三个目录中的都是Vuepress文档的主要内容，从中文文档里也可以看到只有这三个目录被替换了。</p> <h2 id="首页配置"><a href="#首页配置" class="header-anchor">#</a> 首页配置</h2> <p>默认主题提供了一个主页布局，要使用它，需要在你的根目录 <code>README.md</code> 的 <a href="https://vuepress.docschina.org/guide/markdown.html#yaml-front-matter" target="_blank" rel="noopener noreferrer">YAML front matter<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 中指定 <code>home：true</code>，并加上一些其他的元数据。</p> <p>我们先看看根目录下的README,md：</p> <div class="language- extra-class"><pre class="language-text"><code>home: true // 是否使用Vuepress默认主题
+heroImage: /hero.png // 首页的图片
+actionText: Get Started →  // 按钮的文字
+actionLink: /guide/ // 按钮跳转的目录
+features: // 首页三个特性
+- title: Simplicity First
+  details: Minimal setup with markdown-centered project structure helps you focus on writing.
+- title: Vue-Powered
+  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+- title: Performant
+  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+footer: MIT Licensed | Copyright © 2018-present Evan You // 页尾
+</code></pre></div><p>实在看不懂，<a href="https://vuepress.docschina.org/default-theme-config/" target="_blank" rel="noopener noreferrer">官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>有比我更详细的配置说明。</p> <h2 id="导航配置"><a href="#导航配置" class="header-anchor">#</a> 导航配置</h2> <p>导航配置文件在<code>.vuepress/config.js</code>中</p> <p>在导航配置文件中nav是控制导航栏链接的，你可以把它改成自己的博客目录。</p> <div class="language-js extra-class"><pre class="language-js"><code>nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">'Guide'</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">'/guide/'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">'Config Reference'</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">'/config/'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">'Default Theme Config'</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">'/default-theme-config/'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>剩下的默认主题配置官方文档都有很详细的文档说明这里就不在啰嗦了。</p> <h2 id="更改默认主题色"><a href="#更改默认主题色" class="header-anchor">#</a> 更改默认主题色</h2> <p>你可以在<code>.vuepress/</code>目录下创建一个<code>override.styl</code>文件。
+vuepress提供四个可更改的颜色：</p> <div class="language- extra-class"><pre class="language-text"><code>$accentColor = #3eaf7c // 主题色
+$textColor = #2c3e50 // 文字颜色
+$borderColor = #eaecef // 边框颜色
+$codeBgColor = #282c34 // 代码背景颜色
+</code></pre></div><p>我把它改成了这样：
+<img src="https://user-gold-cdn.xitu.io/2018/4/23/162f21a0e07ec947?w=1240&amp;h=698&amp;f=png&amp;s=138334" alt=""></p> <h2 id="侧边栏的实现"><a href="#侧边栏的实现" class="header-anchor">#</a> 侧边栏的实现</h2> <p>由于评论区里问的人较多，所以在这里更新一下，其实我就算在这里写的再详细也不如大家去看官方文档。
+侧边栏的配置也在<code>.vuepress/config.js</code>中：</p> <div class="language- extra-class"><pre class="language-text"><code>sidebar: [
+  {
+    title: 'JavaScript', // 侧边栏名称
+    collapsable: true, // 可折叠
+    children: [
+      '/blog/JavaScript/学会了ES6，就不会写出那样的代码', // 你的md文件地址
+    ]
+  },
+  {
+    title: 'CSS', 
+    collapsable: true,
+    children: [
+      '/blog/CSS/搞懂Z-index的所有细节',
+    ]
+  },
+  {
+    title: 'HTTP',
+    collapsable: true,
+    children: [
+      '/blog/HTTP/认识HTTP-Cookie和Session篇',
+    ]
+  },
+]
+</code></pre></div><p>对应的文档结构：</p> <div class="language- extra-class"><pre class="language-text"><code>├─blog // docs目录下新建一个博客目录
+│  ├─CSS
+│  ├─HTTP
+│  └─JavaScript
+</code></pre></div><p>我的博客：<a href="http://brownhu.site/" target="_blank" rel="noopener noreferrer">brownhu<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h2> <p>在配置好你博客之后，命令行执行：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Vuepress build
+</code></pre></div><p>当你看到这一行就说明成功了：</p> <div class="language- extra-class"><pre class="language-text"><code>Success! Generated static files in vuepress.
+</code></pre></div><p>将打包好的vuepress目录上传到你的github仓库，和github page配合，就可以配置好你的博客网站了。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/Library/emoji.html">如何在你的项目中引入emoji😀</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.510fc359.js" defer></script><script src="/assets/js/2.7d99f056.js" defer></script><script src="/assets/js/18.2efdb6f8.js" defer></script>
+  </body>
+</html>
