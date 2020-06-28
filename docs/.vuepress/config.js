@@ -27,6 +27,7 @@ module.exports = {
                 { title: '异步相关以及EventLoop', path: 'eventLoop' , children: [] },
                 { title: '原型和class', path: 'prototype' , children: [] },
                 { title: '基于promise封装axios', path: 'request' , children: [] },
+                { title: '在循环中使用async/await', path: 'async' , children: [] },
                 { title: '函数节流', path: 'throttle' , children: [] },
                 { title: '函数防抖', path: 'debounce' , children: [] },
             ],
