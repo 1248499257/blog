@@ -1,12 +1,12 @@
-# 原型
+# 原型相关概念
 
 ## Prototype
 JavaScript 中的对象有一个特殊的 [[Prototype]] 内置属性，其实就是对于其他对象的引用。几乎所有的对象在创建时 [[Prototype]] 属性都会被赋予一个非空的值。
 
 思考下面的代码：
 ```js
-var myObject = { a:2 }; 
- 
+var myObject = { a:2 };
+
 myObject.a; // 2
 ```
 当你试图引用对象的属性时会触发原型[[Get]] 操作，比如 myObject.a。对于默认的 [[Get]] 操作来说，第一步是检查对象本身是否有这个属性，如果有的话就使用它。但是如果 **a** 不在 myObject 中，就需要使用对象的 [[Prototype]] 链了。
@@ -15,11 +15,11 @@ myObject.a; // 2
 ```js
 var myObject = {};
 
-var anotherObject = { a:2 }; 
+var anotherObject = { a:2 };
 
-// 创建一个关联到 anotherObject 的对象 
-var myObject = Object.create( anotherObject );  
- 
+// 创建一个关联到 anotherObject 的对象
+var myObject = Object.create( anotherObject );
+
 myObject.a; // 2
 
 ```
@@ -51,46 +51,46 @@ myObject.a; // 2
 
 class的语法解决了典型原型风格代码中许多显而易见的（语法）问题和缺点，举个例子：
 ```js
-class Widget {      
-    constructor(width,height) {         
-        this.width = width || 50;  
-        this.height = height || 50;          
-        this.$elem = null;     
-        }     
-        render($where){         
-            if (this.$elem) {              
-                this.$elem.css( {                 
-                    width: this.width + "px",                 
-                    height: this.height + "px"              
-                } ).appendTo( $where );         
-            }      
-        } } 
+class Widget {
+    constructor(width,height) {
+        this.width = width || 50;
+        this.height = height || 50;
+        this.$elem = null;
+        }
+        render($where){
+            if (this.$elem) {
+                this.$elem.css( {
+                    width: this.width + "px",
+                    height: this.height + "px"
+                } ).appendTo( $where );
+            }
+        } }
 
- class Button extends Widget {      
-     constructor(width,height,label) {         
-         super( width, height );         
-         this.label = label || "Default";         
-         this.$elem = $( "<button>" ).text( this.label );     
-        }     
-         render($where) {         
-             super( $where );         
-             this.$elem.click( this.onClick.bind( this ) );      
-        }     
-        onClick(evt) {         
-            console.log( "Button '" + this.label + "' clicked!" );     
+ class Button extends Widget {
+     constructor(width,height,label) {
+         super( width, height );
+         this.label = label || "Default";
+         this.$elem = $( "<button>" ).text( this.label );
+        }
+         render($where) {
+             super( $where );
+             this.$elem.click( this.onClick.bind( this ) );
+        }
+        onClick(evt) {
+            console.log( "Button '" + this.label + "' clicked!" );
         }  }
 ```
 这个例子是想创建一个自定义的控件 **button**，假如使用prototype语法的话看起来会非常杂乱无章（这里就不作展示）。
 
 ### class的优点
 
-1. 不再引用杂乱的 .prototype 了。 
+1. 不再引用杂乱的 .prototype 了。
 
-2. Button 声 明 时 直 接“ 继 承 ” 了 Widget， 不 再 需 要 通 过 Object.create(..) 来 替 换 .prototype 对象，也不需要设置 .__proto__  或者 Object.setPrototypeOf(..)。 
+2. Button 声 明 时 直 接“ 继 承 ” 了 Widget， 不 再 需 要 通 过 Object.create(..) 来 替 换 .prototype 对象，也不需要设置 .__proto__  或者 Object.setPrototypeOf(..)。
 
 3. 可以通过 super(..) 来实现相对多态，这样任何方法都可以引用原型链上层的同名方法。
 
-4. class 字面语法不能声明属性（只能声明方法）。看起来这是一种限制，但是它会排除掉许多不好的情况，如果没有这种限制的话，原型链末端的“实例”可能会意外地获取其他地方的属性（这些属性隐式被所有“实例”所“共享”）。所以，class 语法实际上可以帮助你避免犯错。 
+4. class 字面语法不能声明属性（只能声明方法）。看起来这是一种限制，但是它会排除掉许多不好的情况，如果没有这种限制的话，原型链末端的“实例”可能会意外地获取其他地方的属性（这些属性隐式被所有“实例”所“共享”）。所以，class 语法实际上可以帮助你避免犯错。
 
 5. 可以通过 extends 很自然地扩展对象（子）类型，甚至是内置的对象（子）类型，比如 Array 或 RegExp。没有 class ..extends 语法时，想实现这一点是非常困难的，基本上只有框架的作者才能搞清楚这一点。但是现在可以轻而易举地做到！
 
@@ -99,12 +99,3 @@ class Widget {
 class 语法其实并没有解决所有的问题，在 JavaScript 中使用“类”设计模式仍然存在许多深层问题。
 
 首先，你可能会认为 ES6 的 class 语法是向 JavaScript 中引入了一种新的“类”机制，其实不是这样。class 基本上只是现有 [[Prototype]]（委托！）机制的一种语法糖。也就是说，class 并不会像传统面向类的语言一样在声明时静态复制所有行为。如果你 （有意或无意）修改或者替换了父“类”中的一个方法，那子“类”和所有实例都会受到 影响，因为它们在定义时并没有进行复制，只是使用基于 [[Prototype]] 的实时委托。
-
-
-
-
-
-
-
-
-

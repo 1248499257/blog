@@ -1,12 +1,12 @@
 module.exports = {
-    title: "Haha's Blog",
-    description: '如果你工作很忙，除了你是真的很重要之外，更可能的原因是：你很弱。',
+    title: "Peanut's Blog",
+    description: 'Keep Going',
     head: [['link', { rel: 'icon', href: '/favicon.png' }]],
     themeConfig: {
         nav: [
-            { text: 'dashboard', link: '/' },
+            { text: '主页', link: '/' },
             {
-                text: 'Personal article',
+                text: '文章目录',
                 items: [
                     { text: 'JavaScript', link: '/JavaScript/' },
                     { text: 'CSS', link: '/CSS/' },
@@ -15,21 +15,24 @@ module.exports = {
                     { text: '小程序', link: '/Applets/' },
                 ],
             },
-            { text: 'Book', link: '/Book/' },
-            { text: 'Resume', link: '/Resume/' },
+            { text: '算法与数据结构', link: '/Algorithm/' },
+            { text: '书籍/收藏文章', link: '/Book/' },
+            // { text: 'Resume', link: '/Resume/' },
             { text: 'GitHub', link: 'https://github.com/1248499257' },
         ],
         sidebar: {
             '/JavaScript/': [
-                '',
-                'youdontknowJS',
-                'event',
-                'eventLoop',
-                'prototype'
+                { title: '你不知道的JS记录', children: ['', 'youdontknowJS'] },
+                { title: '事件以及事件对象', path: 'event' , children: [] },
+                { title: '异步相关以及EventLoop', path: 'eventLoop' , children: [] },
+                { title: '原型和class', path: 'prototype' , children: [] },
+                { title: '基于promise封装axios', path: 'request' , children: [] },
+                { title: '函数节流', path: 'throttle' , children: [] },
+                { title: '函数防抖', path: 'debounce' , children: [] },
             ],
             '/CSS/': ['', 'grid'],
             '/Vue/': [''],
-            '/HTTP/': ['', 'UDPORTCP','HTTP2', 'OSI'],
+            '/HTTP/': ['', 'UDPORTCP', 'HTTP2', 'OSI'],
             '/Node/': [''],
             '/Applets/': ['', 'detail', 'components'],
         },
