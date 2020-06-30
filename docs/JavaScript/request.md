@@ -1,4 +1,4 @@
-# axios封装(Promise版本)
+# 基于 axios 封装 request
 
 ```js
 import * as stringify from 'qs/lib/stringify';

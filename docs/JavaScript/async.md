@@ -1,3 +1,5 @@
+# 在循环中使用 await/async
+
 ## 准备一个例子
 
 假设你想从下面这个水果篮中获取对应水果的数量
@@ -320,3 +322,5 @@
 2. 不要在 forEach 里面使用 await，使用上面说的来代替
 
 3. 在 filter 和 reduce 中使用 await 时，建议先用 map 先一步处理
+
+本文翻译自[点击阅读原文](https://medium.com/free-code-camp/javascript-async-and-await-in-loops-30ecc5fb3939)，仅作为个人学习用

@@ -24,10 +24,8 @@ module.exports = {
             '/JavaScript/': [
                 { title: '你不知道的JS记录', children: ['', 'youdontknowJS'] },
                 { title: '事件以及事件对象', path: 'event' , children: [] },
-                { title: '异步相关以及EventLoop', path: 'eventLoop' , children: [] },
+                { title: '异步', children: ['eventLoop', 'async', 'request', 'callbackHell'] },
                 { title: '原型和class', path: 'prototype' , children: [] },
-                { title: '基于promise封装axios', path: 'request' , children: [] },
-                { title: '在循环中使用async/await', path: 'async' , children: [] },
                 { title: '函数节流', path: 'throttle' , children: [] },
                 { title: '函数防抖', path: 'debounce' , children: [] },
             ],
